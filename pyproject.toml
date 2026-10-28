@@ -1,0 +1,21 @@
+[project]
+name = "sparse-chess-control-group"
+version = "0.1.0"
+description = "The control group for the Sparse Chess experiment"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mlflow>=3.17.0",
+    "numpy>=2.5.3",
+    "torch>=2.14.1",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cpu" },
+]
