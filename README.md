@@ -39,7 +39,13 @@ If you wanna replicate the experiment, you first have to download one of the chu
 
 ### How to separate the dataset?
 
-Just split the `.gz` files into `dataset/val/` and `dataset/train`. Since the paths are hardcoded into the code, you have to change the paths manually in the `main.py` file.
+Just split the `.gz` files into `training-dataset/val/` and `training-dataset/train`. Since the paths are hardcoded into the code, you have to change the paths manually in the `main.py` file.
+
+You can split the dataset automatically with the script in the [**Sparse Chess**](https://github.com/P1X3R/sparse-chess#how-to-split-the-dataset) repo:
+
+```bash
+bash split_dataset.sh
+```
 
 ### How to setup the MLFlow server?
 
